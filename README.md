@@ -192,27 +192,5 @@ npm run tool:test
 }
 ```
 
-## 本地 Anna Harness 配置说明
 
-按照 Anna 文档的设计模型，本地运行应当是：
-
-1. 使用 `anna-app dev` 启动本地 harness
-2. harness 加载 app bundle
-3. 前端通过 `AnnaAppRuntime.connect()` 连接 host API
-4. host 根据 `manifest` 启动并调用本地 tool
-
-
-如果你本机已经安装了 Anna CLI，下一步应当是直接在这个仓库根目录运行：
-
-```bash
-anna-app dev
-```
-
-以及：
-
-```bash
-anna-app validate --strict
-```
-
-如果 CLI 对 `manifest.json` 的字段结构还有更严格要求，再根据报错继续收敛字段即可。
 
