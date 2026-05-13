@@ -1,0 +1,10 @@
+{
+  "name": "mini-notes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal local Anna App style notes app with a JSON-RPC stdio tool.",
+  "scripts": {
+    "dev": "node server.js",
+    "tool:test": "node scripts/test-tool.js"
+  }
+}

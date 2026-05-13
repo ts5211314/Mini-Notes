@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Notes</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <p class="eyebrow">Anna App Style Demo</p>
+        <h1>Mini Notes</h1>
+        <p class="subtitle">
+          Capture short notes, keep them local, and summarize them through a tool
+          boundary.
+        </p>
+        <p id="runtime-status" class="runtime-status">Runtime: connecting...</p>
+      </section>
+
+      <section class="composer card">
+        <label class="label" for="note-input">New note</label>
+        <textarea
+          id="note-input"
+          maxlength="160"
+          placeholder="Example: Fix login bug"
+          rows="4"
+        ></textarea>
+        <div class="composer-bar">
+          <span id="char-count">0 / 160</span>
+          <button id="save-note" type="button">Save note</button>
+        </div>
+      </section>
+
+      <section class="summary card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Tool invocation</p>
+            <h2>Summary</h2>
+          </div>
+          <button id="summarize-notes" type="button">Summarize</button>
+        </div>
+        <p id="summary-output" class="summary-output empty">
+          No summary yet.
+        </p>
+      </section>
+
+      <section class="notes card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Stored notes</p>
+            <h2>Notes list</h2>
+          </div>
+          <span id="note-count" class="count-pill">0</span>
+        </div>
+        <ul id="notes-list" class="notes-list"></ul>
+        <p id="empty-state" class="empty-state">No notes saved yet.</p>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,20 @@
+{
+  "appId": "mini-notes",
+  "name": "Mini Notes",
+  "version": "1.0.0",
+  "runtime": {
+    "connect": "AnnaAppRuntime.connect"
+  },
+  "entry": {
+    "html": "public/index.html"
+  },
+  "tools": [
+    {
+      "name": "mini-notes-summarizer",
+      "command": "node",
+      "args": ["tool/executa-tool.js"],
+      "transport": "stdio",
+      "methods": ["describe", "invoke"]
+    }
+  ]
+}
